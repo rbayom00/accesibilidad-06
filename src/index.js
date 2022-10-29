@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ProSidebarProvider } from "react-pro-sidebar";
+
+import Home from "./routes/Home";
+import ErrorPage from "./routes/ErrorPage";
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <ErrorPage />,
+  }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ProSidebarProvider>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <RouterProvider router={router} />
+      </div>
+    </ProSidebarProvider>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
