@@ -20,7 +20,7 @@ const ErrorPage = () => {
       {modalStatus ? (
         <div className="modal-error-page">
           <h1>Error 404 - Not found</h1>
-          <h1>Donde querías ir realmente</h1>
+          <h1>¿Dónde querías ir realmente?</h1>
           <Link to="/">Quiero ir a la pagina principal</Link>
         </div>
       ) : (
