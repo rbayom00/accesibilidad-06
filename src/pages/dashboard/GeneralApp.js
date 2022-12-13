@@ -21,7 +21,6 @@ import {
   AppFeatured
 } from '../../components/_dashboard/general-app';
 import { CardContent, Button, Box, Card, Typography } from '@material-ui/core';
-import { WindowScrollController } from '@fullcalendar/react';
 
 
 // ----------------------------------------------------------------------
@@ -163,8 +162,6 @@ export default function GeneralApp() {
               <CarouselItem onClick={()=>{navigate('/dashboard/app/event/0')}} key={MOCK_APPS[0].id} item={MOCK_APPS[0]} isActive={true} />
             </Card>
           </Grid>
-          
-          
         </Grid>
       </Container>
     </Page>
