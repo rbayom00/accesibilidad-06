@@ -122,9 +122,7 @@ export default function GeneralApp() {
           </Grid>
 
           <Grid item xs={12} md={4}>
-            <Button>
-              <AppFeatured />
-            </Button>
+            <AppFeatured />
           </Grid>
 
           <Grid item xs={12} md={4}>

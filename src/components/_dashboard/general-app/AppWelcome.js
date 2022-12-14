@@ -3,7 +3,6 @@ import { Link as RouterLink } from 'react-router-dom';
 // material
 import { styled } from '@material-ui/core/styles';
 import { Typography, Button, Card, CardContent } from '@material-ui/core';
-import { SeoIllustration } from '../../../assets';
 
 // ----------------------------------------------------------------------
 
@@ -45,7 +44,7 @@ export default function AppWelcome({ displayName }) {
           This is your place to see events and subscribe to them.<br/> Feel free to create your own one on the left menu.
         </Typography>
 
-        <Button variant="contained" to="#" component={RouterLink}>
+        <Button variant="contained" to="createEvent" component={RouterLink}>
           Create an event!
         </Button>
       </CardContent>

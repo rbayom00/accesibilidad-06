@@ -12,6 +12,7 @@ import AuthGuard from '../guards/AuthGuard';
 // components
 import LoadingScreen from '../components/LoadingScreen';
 import GeneralEvent from 'src/pages/dashboard/GeneralEvent';
+import GeneralNewEvent from 'src/pages/dashboard/GeneralNewEvent';
 
 // ----------------------------------------------------------------------
 
@@ -82,6 +83,7 @@ export default function Router() {
         { path: '/', element: <Navigate to="/dashboard/app" replace /> },
         { path: 'app', element: <GeneralApp /> },
         { path: 'app/event/:id', element: <GeneralEvent /> },
+        { path: 'app/createEvent', element: <GeneralNewEvent /> },
         { path: 'ecommerce', element: <GeneralEcommerce /> },
         { path: 'banking', element: <GeneralBanking /> },
         { path: 'booking', element: <GeneralBooking /> },
