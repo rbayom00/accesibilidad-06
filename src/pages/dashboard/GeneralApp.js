@@ -30,9 +30,13 @@ export default function GeneralApp() {
 
   const theme = useTheme();
 
-  const TITLES = ['Feria del Libro en La Bañeza', 'Crankdat Set on Columbus', 'Lightroom mobile - Koloro', 'Pixel Terror on Armellada'];
+  const TITLES = ['Feria del Libro en La Bañeza', 
+                  'Crankdat Set on Columbus', 
+                  'Lightroom mobile - Koloro', 
+                  'Pixel Terror on Armellada', 
+                  'Gala Internacional: Los Mejores Magos del Mundo'];
   
-  const MOCK_APPS = [...Array(4)].map((_, index) => ({
+  const MOCK_APPS = [...Array(5)].map((_, index) => ({
     id: mockData.id(index),
     title: TITLES[index],
     description: TITLES[index],
@@ -92,7 +96,7 @@ export default function GeneralApp() {
                     display: 'block'
                   }}
                 >
-                  Featured App
+                  Event
                 </Typography>
               </motion.div>
               <motion.div variants={varFadeInRight}>
@@ -139,13 +143,13 @@ export default function GeneralApp() {
 
           <Grid item xs={12} md={4}>
             <Card>
-              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/2')}} key={MOCK_APPS[2].id} item={MOCK_APPS[2]} isActive={true} />
+              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/4')}} key={MOCK_APPS[4].id} item={MOCK_APPS[4]} isActive={true} />
             </Card>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <Card>
-              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/1')}} key={MOCK_APPS[1].id} item={MOCK_APPS[1]} isActive={true} />
+              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/2')}} key={MOCK_APPS[2].id} item={MOCK_APPS[2]} isActive={true} />
             </Card>
           </Grid>
 

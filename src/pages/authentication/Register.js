@@ -13,7 +13,6 @@ import AuthLayout from '../../layouts/AuthLayout';
 import Page from '../../components/Page';
 import { MHidden } from '../../components/@material-extend';
 import { RegisterForm } from '../../components/authentication/register';
-import AuthFirebaseSocials from '../../components/authentication/AuthFirebaseSocial';
 
 // ----------------------------------------------------------------------
 
@@ -48,7 +47,7 @@ export default function Register() {
   const { method } = useAuth();
 
   return (
-    <RootStyle title="Register | Minimal-UI">
+    <RootStyle title="Register | EventMag">
       <AuthLayout>
         Already have an account? &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.login}>
@@ -58,8 +57,11 @@ export default function Register() {
 
       <MHidden width="mdDown">
         <SectionStyle>
-          <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-            Manage the job more effectively with Minimal
+          <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 2 }}>
+            Your events.<br/>Done easier.
+          </Typography>
+          <Typography variant="h5" sx={{ px: 5, mb: 1, mt: 2 }}>
+            Fill the form to become a member of EventMag
           </Typography>
           <img alt="register" src="/static/illustrations/illustration_register.png" />
         </SectionStyle>
@@ -70,21 +72,19 @@ export default function Register() {
           <Box sx={{ mb: 5, display: 'flex', alignItems: 'center' }}>
             <Box sx={{ flexGrow: 1 }}>
               <Typography variant="h4" gutterBottom>
-                Get started absolutely free.
+                Sign up.
               </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>Free forever. No credit card needed.</Typography>
+              <Typography sx={{ color: 'text.secondary' }}>Get access to a wide variety of events for free.</Typography>
             </Box>
             <Tooltip title={capitalCase(method)}>
               <Box component="img" src={`/static/auth/ic_${method}.png`} sx={{ width: 32, height: 32 }} />
             </Tooltip>
           </Box>
 
-          {method === 'firebase' && <AuthFirebaseSocials />}
-
           <RegisterForm />
 
           <Typography variant="body2" align="center" sx={{ color: 'text.secondary', mt: 3 }}>
-            By registering, I agree to Minimal&nbsp;
+            By registering, I agree to EventMag&nbsp;
             <Link underline="always" color="text.primary" href="#">
               Terms of Service
             </Link>

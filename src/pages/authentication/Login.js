@@ -58,16 +58,16 @@ export default function Login() {
       <AuthLayout>
         Don’t have an account? &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to={PATH_AUTH.register}>
-          Get started (Under construction)
+          Register and account
         </Link>
       </AuthLayout>
 
       <MHidden width="mdDown">
         <SectionStyle>
-          <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 2 }}>
+          <Typography variant="h3" sx={{ px: 5, mt: 12, mb: 2 }}>
             Welcome to EventMag
           </Typography>
-          <Typography variant="h5" sx={{ px: 5, mt: 1, mb: 5 }}>
+          <Typography variant="h5" sx={{ px: 5, mt: 1 }}>
             The powerful event manager
           </Typography>
           <img src="/static/illustrations/eventmag_hi.png" alt="login" />

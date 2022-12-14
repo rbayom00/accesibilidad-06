@@ -63,7 +63,7 @@ export default function NewEventComponent() {
     }
   });
 
-  const { isSubmitting, handleSubmit, getFieldProps } = formik;
+  const { isSubmitting, handleSubmit } = formik;
 
   const RootStyle = styled(Card)(({ theme }) => ({
     boxShadow: 'none',
@@ -119,7 +119,7 @@ export default function NewEventComponent() {
                   <TextField fullWidth label="Country" defaultValue={"Spain"}/>
                 </Stack>
 
-                <TextField fullWidth multiline minRows={4} maxRows={4} label="Describe the event briefly" />
+                <TextField fullWidth multiline minRows={3} maxRows={3} label="Describe the event briefly" />
 
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
                   <TextField fullWidth label="Price (€)" defaultValue={"0.00"} />

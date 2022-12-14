@@ -32,7 +32,7 @@ export default function GeneralEvent({}) {
   const MOCK_APPS = [...Array(4)].map((_, index) => ({
     id: mockData.id(index),
     title: TITLES[index],
-    description: TITLES[index], // mockData.text.title(index),
+    description: TITLES[index],
     image: mockData.image.feed(index)
   }));
 

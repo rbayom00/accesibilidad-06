@@ -1,5 +1,5 @@
 // routes
-import { PATH_AUTH, PATH_DASHBOARD, PATH_PAGE } from '../../routes/paths';
+import { PATH_AUTH, PATH_DASHBOARD } from '../../routes/paths';
 // components
 import Label from '../../components/Label';
 import SvgIconStyle from '../../components/SvgIconStyle';
@@ -36,9 +36,7 @@ const sidebarConfig = [
         path: PATH_DASHBOARD.general.app,
         icon: ICONS.dashboard
       },
-      // { title: 'Under construction!', path: PATH_DASHBOARD.general.analytics, icon: ICONS.analytics },
       { title: 'Under construction!', path: "/coming-soon", icon: ICONS.analytics },
-      // { title: 'Subscribed Events', path: PATH_DASHBOARD.general.booking, icon: ICONS.booking }
       { title: 'Subscribed Events', path: "#", icon: ICONS.booking }
     ]
   },
@@ -57,7 +55,6 @@ const sidebarConfig = [
       { title: 'Calendar', path: PATH_DASHBOARD.calendar, icon: ICONS.calendar },
       {
         title: 'Logout',
-        // path: PATH_DASHBOARD.kanban,
         path: PATH_AUTH.logout,
         icon: ICONS.kanban
       }

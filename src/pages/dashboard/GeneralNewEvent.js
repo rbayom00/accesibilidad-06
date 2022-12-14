@@ -23,7 +23,7 @@ export default function UserAccount() {
   return (
     <Page title="New Event | EventMag">
       <Container maxWidth={themeStretch ? false : 'lg'}>
-        <Stack spacing={5}>
+        <Stack>
           <Tabs
             value={0}
             scrollButtons="auto"

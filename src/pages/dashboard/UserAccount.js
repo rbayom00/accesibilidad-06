@@ -2,9 +2,7 @@ import { Icon } from '@iconify/react';
 import { capitalCase } from 'change-case';
 import { useState, useEffect } from 'react';
 import bellFill from '@iconify/icons-eva/bell-fill';
-import shareFill from '@iconify/icons-eva/share-fill';
 import roundVpnKey from '@iconify/icons-ic/round-vpn-key';
-import roundReceipt from '@iconify/icons-ic/round-receipt';
 import roundAccountBox from '@iconify/icons-ic/round-account-box';
 // material
 import { Container, Tab, Box, Tabs, Stack } from '@material-ui/core';
@@ -20,8 +18,6 @@ import Page from '../../components/Page';
 import HeaderBreadcrumbs from '../../components/HeaderBreadcrumbs';
 import {
   AccountGeneral,
-  AccountBilling,
-  AccountSocialLinks,
   AccountNotifications,
   AccountChangePassword
 } from '../../components/_dashboard/user/account';
@@ -48,19 +44,9 @@ export default function UserAccount() {
       component: <AccountGeneral />
     },
     {
-      value: 'billing',
-      icon: <Icon icon={roundReceipt} width={20} height={20} />,
-      component: <AccountBilling />
-    },
-    {
       value: 'notifications',
       icon: <Icon icon={bellFill} width={20} height={20} />,
       component: <AccountNotifications />
-    },
-    {
-      value: 'social_links',
-      icon: <Icon icon={shareFill} width={20} height={20} />,
-      component: <AccountSocialLinks />
     },
     {
       value: 'change_password',

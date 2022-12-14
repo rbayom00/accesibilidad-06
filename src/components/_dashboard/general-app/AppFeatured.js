@@ -14,13 +14,13 @@ import { CarouselControlsPaging1, CarouselControlsArrowsBasic1 } from '../../car
 
 // ----------------------------------------------------------------------
 
-const TITLES = ['Feria del Libro en La Bañeza', 'Crankdat Set on Columbus', 'Lightroom mobile - Koloro', 'Pixel Terror on Armellada'];
+const TITLES = ['Lightroom mobile - Koloro', 'Pixel Terror on Armellada', 'Gala Internacional: Los Mejores Magos del Mundo'];
 
-const MOCK_APPS = [...Array(4)].map((_, index) => ({
+const MOCK_APPS = [...Array(3)].map((_, index) => ({
   id: mockData.id(index),
   title: TITLES[index],
-  description: TITLES[index], // mockData.text.title(index),
-  image: mockData.image.feed(index)
+  description: TITLES[index],
+  image: mockData.image.feed(index+2)
 }));
 
 const CarouselImgStyle = styled('img')(({ theme }) => ({
