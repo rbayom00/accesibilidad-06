@@ -37,10 +37,5 @@ export default function logoutSidebar() {
     handleLogout();
   });
 
-  return (
-        <Box>
-            {handleLogout}
-        </Box>
-  );
+  return <Box>{handleLogout}</Box>;
 }
-

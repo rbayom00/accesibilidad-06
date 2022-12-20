@@ -58,7 +58,9 @@ export default function Register() {
       <MHidden width="mdDown">
         <SectionStyle>
           <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 2 }}>
-            Your events.<br/>Done easier.
+            Your events.
+            <br />
+            Done easier.
           </Typography>
           <Typography variant="h5" sx={{ px: 5, mb: 1, mt: 2 }}>
             Fill the form to become a member of EventMag

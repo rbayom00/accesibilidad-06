@@ -41,7 +41,8 @@ export default function AppWelcome({ displayName }) {
         </Typography>
 
         <Typography variant="body2" sx={{ pb: { xs: 3, xl: 5 }, maxWidth: 480, mx: 'auto' }}>
-          This is your place to see events and subscribe to them.<br/> Feel free to create your own one on the left menu.
+          This is your place to see events and subscribe to them.
+          <br /> Feel free to create your own one on the left menu.
         </Typography>
 
         <Button variant="contained" to="createEvent" component={RouterLink}>
@@ -49,8 +50,13 @@ export default function AppWelcome({ displayName }) {
         </Button>
       </CardContent>
 
-      
-      <img style={{marginRight: 60}} src="/static/illustrations/eventmag_box_big.png" height="200px" width="200px" alt="Box" />
+      <img
+        style={{ marginRight: 60 }}
+        src="/static/illustrations/eventmag_box_big.png"
+        height="200px"
+        width="200px"
+        alt="Box"
+      />
     </RootStyle>
   );
 }

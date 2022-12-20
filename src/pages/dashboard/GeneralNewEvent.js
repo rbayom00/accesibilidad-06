@@ -24,18 +24,18 @@ export default function UserAccount() {
     <Page title="New Event | EventMag">
       <Container maxWidth={themeStretch ? false : 'lg'}>
         <Stack>
-          <Tabs
-            value={0}
-            scrollButtons="auto"
-            variant="scrollable"
-            allowScrollButtonsMobile
-          >
-            
-            <Tab disableRipple key={ACCOUNT_TABS[0].value} label={capitalCase(ACCOUNT_TABS[0].value)} icon={''} value={''} />
+          <Tabs value={0} scrollButtons="auto" variant="scrollable" allowScrollButtonsMobile>
+            <Tab
+              disableRipple
+              key={ACCOUNT_TABS[0].value}
+              label={capitalCase(ACCOUNT_TABS[0].value)}
+              icon={''}
+              value={''}
+            />
           </Tabs>
 
           {ACCOUNT_TABS.map((tab) => {
-            return <Box key={ACCOUNT_TABS[0].value}>{ACCOUNT_TABS[0].component}</Box>
+            return <Box key={ACCOUNT_TABS[0].value}>{ACCOUNT_TABS[0].component}</Box>;
           })}
         </Stack>
       </Container>

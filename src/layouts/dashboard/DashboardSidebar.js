@@ -93,8 +93,7 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
   const { pathname } = useLocation();
   const { user } = useAuth();
 
-  const { isCollapse, collapseClick, collapseHover, onHoverEnter, onHoverLeave } =
-    useCollapseDrawer();
+  const { isCollapse, collapseClick, collapseHover, onHoverEnter, onHoverLeave } = useCollapseDrawer();
 
   useEffect(() => {
     if (isOpenSidebar) {
@@ -127,12 +126,10 @@ export default function DashboardSidebar({ isOpenSidebar, onCloseSidebar }) {
       >
         <Stack direction="row" alignItems="center" justifyContent="space-between">
           <Box component={RouterLink} to="/" sx={{ display: 'inline-flex' }}>
-          <img  src="/static/illustrations/eventmag_box_big.png" height="80px" width="80px" alt="Logo" />
+            <img src="/static/illustrations/eventmag_box_big.png" height="80px" width="80px" alt="Logo" />
           </Box>
 
-          <MHidden width="lgDown">
-            {!isCollapse && <IconCollapse/>}
-          </MHidden>
+          <MHidden width="lgDown">{!isCollapse && <IconCollapse />}</MHidden>
         </Stack>
 
         {isCollapse ? (

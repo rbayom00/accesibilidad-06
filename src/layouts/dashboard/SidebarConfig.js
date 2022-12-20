@@ -36,8 +36,8 @@ const sidebarConfig = [
         path: PATH_DASHBOARD.general.app,
         icon: ICONS.dashboard
       },
-      { title: 'Under construction!', path: "/coming-soon", icon: ICONS.analytics },
-      { title: 'Subscribed Events', path: "#", icon: ICONS.booking }
+      { title: 'Under construction!', path: '/coming-soon', icon: ICONS.analytics },
+      { title: 'Subscribed Events', path: '#', icon: ICONS.booking }
     ]
   },
 

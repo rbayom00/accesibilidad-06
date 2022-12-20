@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 // utils
 import mockData from '../../utils/mock-data';
 //
@@ -16,12 +16,8 @@ import { alpha, useTheme, styled } from '@material-ui/core/styles';
 // components
 import Page from '../../components/Page';
 import PropTypes from 'prop-types';
-import {
-  AppWelcome,
-  AppFeatured
-} from '../../components/_dashboard/general-app';
+import { AppWelcome, AppFeatured } from '../../components/_dashboard/general-app';
 import { CardContent, Button, Box, Card, Typography } from '@material-ui/core';
-
 
 // ----------------------------------------------------------------------
 
@@ -30,12 +26,14 @@ export default function GeneralApp() {
 
   const theme = useTheme();
 
-  const TITLES = ['Feria del Libro en La Bañeza', 
-                  'Crankdat Set on Columbus', 
-                  'Lightroom mobile - Koloro', 
-                  'Pixel Terror on Armellada', 
-                  'Gala Internacional: Los Mejores Magos del Mundo'];
-  
+  const TITLES = [
+    'Feria del Libro en La Bañeza',
+    'Crankdat Set on Columbus',
+    'Lightroom mobile - Koloro',
+    'Pixel Terror on Armellada',
+    'Gala Internacional: Los Mejores Magos del Mundo'
+  ];
+
   const MOCK_APPS = [...Array(5)].map((_, index) => ({
     id: mockData.id(index),
     title: TITLES[index],
@@ -63,7 +61,7 @@ export default function GeneralApp() {
 
   function CarouselItem({ item, isActive }) {
     const { image, title, description } = item;
-  
+
     return (
       <RouterLink to="#">
         <Box sx={{ position: 'relative' }}>
@@ -117,7 +115,6 @@ export default function GeneralApp() {
   }
 
   return (
-    
     <Page title="EventMag | Event Manager">
       <Container maxWidth={themeStretch ? false : 'xl'}>
         <Grid container spacing={3}>
@@ -131,37 +128,79 @@ export default function GeneralApp() {
 
           <Grid item xs={12} md={4}>
             <Card>
-              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/0')}} key={MOCK_APPS[0].id} item={MOCK_APPS[0]} isActive={true}/>
+              <CarouselItem
+                onClick={() => {
+                  navigate('/dashboard/app/event/0');
+                }}
+                key={MOCK_APPS[0].id}
+                item={MOCK_APPS[0]}
+                isActive={true}
+              />
             </Card>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <Card>
-              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/1')}} key={MOCK_APPS[1].id} item={MOCK_APPS[1]} isActive={true} />
+              <CarouselItem
+                onClick={() => {
+                  navigate('/dashboard/app/event/1');
+                }}
+                key={MOCK_APPS[1].id}
+                item={MOCK_APPS[1]}
+                isActive={true}
+              />
             </Card>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <Card>
-              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/4')}} key={MOCK_APPS[4].id} item={MOCK_APPS[4]} isActive={true} />
+              <CarouselItem
+                onClick={() => {
+                  navigate('/dashboard/app/event/4');
+                }}
+                key={MOCK_APPS[4].id}
+                item={MOCK_APPS[4]}
+                isActive={true}
+              />
             </Card>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <Card>
-              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/2')}} key={MOCK_APPS[2].id} item={MOCK_APPS[2]} isActive={true} />
+              <CarouselItem
+                onClick={() => {
+                  navigate('/dashboard/app/event/2');
+                }}
+                key={MOCK_APPS[2].id}
+                item={MOCK_APPS[2]}
+                isActive={true}
+              />
             </Card>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <Card>
-              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/3')}} key={MOCK_APPS[3].id} item={MOCK_APPS[3]} isActive={true} />
+              <CarouselItem
+                onClick={() => {
+                  navigate('/dashboard/app/event/3');
+                }}
+                key={MOCK_APPS[3].id}
+                item={MOCK_APPS[3]}
+                isActive={true}
+              />
             </Card>
           </Grid>
 
           <Grid item xs={12} md={4}>
             <Card>
-              <CarouselItem onClick={()=>{navigate('/dashboard/app/event/0')}} key={MOCK_APPS[0].id} item={MOCK_APPS[0]} isActive={true} />
+              <CarouselItem
+                onClick={() => {
+                  navigate('/dashboard/app/event/0');
+                }}
+                key={MOCK_APPS[0].id}
+                item={MOCK_APPS[0]}
+                isActive={true}
+              />
             </Card>
           </Grid>
         </Grid>

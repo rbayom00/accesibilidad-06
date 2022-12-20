@@ -10,7 +10,6 @@ const LANGS = [
     value: 'en',
     systemValue: enUS,
     icon: '/static/icons/ic_flag_en.svg'
-    
   },
   {
     label: 'Spanish',

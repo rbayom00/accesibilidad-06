@@ -14,13 +14,17 @@ import { CarouselControlsPaging1, CarouselControlsArrowsBasic1 } from '../../car
 
 // ----------------------------------------------------------------------
 
-const TITLES = ['Lightroom mobile - Koloro', 'Pixel Terror on Armellada', 'Gala Internacional: Los Mejores Magos del Mundo'];
+const TITLES = [
+  'Lightroom mobile - Koloro',
+  'Pixel Terror on Armellada',
+  'Gala Internacional: Los Mejores Magos del Mundo'
+];
 
 const MOCK_APPS = [...Array(3)].map((_, index) => ({
   id: mockData.id(index),
   title: TITLES[index],
   description: TITLES[index],
-  image: mockData.image.feed(index+2)
+  image: mockData.image.feed(index + 2)
 }));
 
 const CarouselImgStyle = styled('img')(({ theme }) => ({
